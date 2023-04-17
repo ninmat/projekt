@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om oss | Serenity Webbshop</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="touch-icon" href="favicon.png">
+    <!-- Stilmall -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Typsnitt-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!--Font Awesome -->
+    <script src="https://kit.fontawesome.com/7a523b8b57.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigering i sidhuvud-->
+    <header>
+        <div class="header-content">
+            <div id="logo-container">
+                <a href="index.html"><img src="images/logotyp.svg" alt="Logotyp"></a>
+            </div>
+            <!-- Menyknapp -->
+            <button class="open-btn" id="open-menu">
+                <span class="menu-icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span id="menu-text">Meny</span>
+            </button>
+            <nav id="nav-menu">
+                <!-- Stäng menyn-->
+                <button class="close-btn" id="close-menu">
+                    <span class="menu-icon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span id="menu-text2">Stäng</span>
+                </button>
+                <!-- Nav-länkar -->
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="products.html">Våra produkter</a></li>
+                    <li><a href="about.html" class="active">Om oss</a></li>
+                </ul>
+                <!--Varukorg-->
+                <button class="cart">
+                    <span class="cart-icon">
+                        <img src="images/cart.svg" alt="varukorg">
+                    </span>
+                    <span id="cart-text">Varukorg</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <!-- Innehåll -->
+    <main>
+        <div class="main-wrapper">
+            <div id="hero-image">
+                <!--Hero-bild i olika storlekar beroende på storlek på enhet-->
+                <picture>
+                    <source srcset="images/header_big.jpg" media="(min-width: 1200px)" />
+                    <source srcset="images/header_medium.jpg" media="(min-width: 768px)" />
+                    <img src="images/header_small.jpg" alt="" />
+                </picture>
+
+                <div class="image-text">
+                    <h1>Om oss</h1>
+                </div>
+            </div>
+            <!-- Information om oss -->
+            <article>
+                <div class="article-image-flex">
+                    <div>
+                        <h2>Modern inredning online</h2>
+                        <p>Vårt mål är att göra ditt hem lugnt och harmoniskt. Hemmet är den plats där man ska trivas
+                            och alltid känna sig välkommen i. Det är det vi på Serenity strävar efter.</p>
+                        <p>Sedan 2017 har vi funnits online för dig som vill hitta moderna och samtidigt tidlösa
+                            inredningsdetaljer till ditt hem.</p>
+                        <p>Visionen med Serenity har alltid handla om att sätta dig och ditt välmående i centrum!</p>
+                    </div>
+                    <div>
+                        <img src="images/decor.jpg" alt="vas i en bokhylla">
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article-image-flex">
+                    <div class="portrait">
+                        <img src="images/portrait.png" alt="webbutvecklaren nina">
+                    </div>
+                    <div>
+                        <h2>Om mig som webbutvecklare</h2>
+                        <p>Jag läser webbutveckling vid Mittuniversitetet. Jag har tidigare läst en kurs i grafisk
+                            design, och det var roligt att i denna kurs att återupptäcka några av de verktyg jag använt mig
+                            av tidigare. Framförallt videoredigering var helt nytt för mig, så det var superkul att
+                            sitta och klippa, lägga på text, jobba med övergångar och så vidare.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <!--Sidfot-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-columns">
+                <!--Kundtjänst-->
+                <div>
+                    <h3>Kundtjänst</h3>
+                    <ul>
+                        <li>Telefon: <a href="tel:018522456">018-522456</a></li>
+                        <li>Telefontider: vardagar kl. 9-16</li>
+                        <li><a href="mailto:serenity@gmail.com">Mejla oss</a></li>
+                    </ul>
+                </div>
+                <!--Länkar på sidan-->
+                <div>
+                    <h3>Hitta på sidan</h3>
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="products.html">Våra produkter</a></li>
+                        <li><a href="about.html" class="active">Om oss</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Sociala medier-->
+            <div>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; Copyright Serenity AB 2023</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,929 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Gör 1rem till 10px */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.8;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Sidhuvud */
+header {
+    background-color: #fff;
+    /* Box-shadow, källa: Box Shadow CSS Generator, https://cssgenerator.org/box-shadow-css-generator.html */
+    box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.44);
+    /* Position: fixed, positionerar elementet i relation till visningsytan. Stannar på samma ställe när scrollar */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /*z-index lägger elementet överst */
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    /* Utrymme mellan elementen i div-elementet */
+    justify-content: space-between;
+    /* centrerar elementen i div-elementet */
+    align-items: center;
+    position: relative;
+}
+
+#logo-container a img {
+
+    /* Centrerar loggan */
+    display: block;
+    margin: 0 1em;
+    padding: 0.3em 0;
+    width: 175px;
+    height: 70px;
+}
+
+
+/* Kod till hamburagrmeny delvis från Malin Larsson, Mittuniversitetet */
+/* öppna meny knapp */
+.open-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    padding: 0.5em;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+/* ikon för meny */
+.menu-icon {
+    padding-left: 0.3em;
+}
+
+/* bars i meny */
+.bars {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+/* Texten meny */
+#menu-text {
+    font-size: 1.8em;
+    padding-left: 0.5em;
+    color: #000;
+}
+
+/* button-element för stäng-knapp */
+.close-btn {
+    margin: 1em auto 2em;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    padding: 0.5em;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Stäng-text */
+#menu-text2 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-left: 0.5em;
+    color: #000;
+}
+
+/* Roterar två lodräda streck, till ett kryss */
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+/* Navigering */
+#nav-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 80%;
+    background-color: #fff;
+    color: #000;
+}
+
+#nav-menu ul {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+#nav-menu ul li {
+    padding: 1em;
+}
+
+#nav-menu ul li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 700;
+}
+
+/* Varukorgen */
+.cart {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+}
+
+.cart-icon img {
+    width: 25px;
+    height: 25px;
+    padding-right: 0.6em;
+}
+
+#cart-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+/* Video bakgrund på startsidan */
+#videobackground video {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+/* Göm större video bakgrund på */
+#video_big {
+    display: none;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+main {
+    padding: 1em 1em;
+    margin: 63px auto;
+}
+
+/* rubriker */
+
+h1 {
+    font-family: 'Golos Text', sans-serif;
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 1em 0 0.5em;
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-family: 'Golos Text', sans-serif;
+    margin: 0 2%;
+    padding: 1.2em 0 0.5em;
+}
+
+h3 {
+    font-size: 2.1rem;
+    padding-bottom: 1em;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.center-heading {
+    text-align: center;
+}
+
+p {
+    padding-bottom: 0.5em;
+}
+
+/* Hero-bild */
+#hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.image-text h1 {
+    padding: 0;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* breadcrumbs */
+#breadcrumbs {
+    margin-top: 0.3em;
+}
+
+#breadcrumbs ul {
+    padding: 0;
+    list-style: none;
+}
+
+#breadcrumbs ul li {
+    display: inline;
+}
+
+#breadcrumbs ul li a {
+    color: #000;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#breadcrumbs ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+#breadcrumbs ul li:last-child {
+    font-weight: 400;
+}
+
+
+
+/* Text och bild */
+.article-image-flex img {
+    width: 100%;
+    height: auto;
+}
+
+.article-image-flex h2 {
+    margin: 0;
+    padding-top: 0;
+}
+
+.article-image-flex div {
+    padding: 0.5em 0;
+}
+
+/* porträtt */
+
+.portrait img {
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Knappar */
+/* centrera knapp */
+.btn-container {
+    text-align: center;
+}
+
+.btn-add {
+    background-color: #000;
+    color: #fff;
+    padding: 0.8em 0;
+    width: 90%;
+    border: none;
+    cursor: pointer;
+    margin: 1em auto;
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.btn-icon img {
+    width: 25px;
+    height: 25px;
+
+}
+
+.btn-add:hover {
+    background-color: #313131;
+}
+
+.btn-link {
+    background-color: #005459;
+    color: #fff;
+    padding: 0.8em 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+/* produktsida */
+.product-images {
+    width: 100%;
+}
+
+.product-image img {
+    display: block;
+    width: 88%;
+    height: auto;
+    padding: 0.5em;
+    border: 1px solid rgb(139, 139, 139);
+    border-radius: 5px;
+    margin: 1em auto;
+}
+
+/* Thumbnails */
+
+.thumbnail {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.thumbnail img {
+    display: inline;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    width: 80%;
+    margin: 0 10%;
+    border: 1px solid rgb(139, 139, 139);
+    border-radius: 5px;
+}
+
+/* produkt text */
+.product-text h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.5em;
+}
+
+.product-text article {
+    padding: 1em;
+}
+
+.soft-text {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.product-price {
+    padding-top: 0.5em;
+    font-size: 3rem;
+}
+
+/* transition effect. Källa: CSS-Tricks, "transition", https://css-tricks.com/almanac/properties/t/transition/ */
+.product-images a img,
+.btn-add,
+.product-card {
+    transition: all 0.7s ease;
+}
+
+/* hover */
+.product-images a img:hover {
+    opacity: 0.8;
+}
+
+
+#product-video {
+    width: 100%;
+    margin: 3em 0 1em;
+}
+
+/* Produktlistning */
+.product-listing {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* produkt i listan */
+.product-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 0.5em;
+    width: 46%;
+    margin: 0.7em 2%;
+    box-shadow: 3px 1px 30px -7px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 3px 1px 30px -7px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 3px 1px 30px -7px rgba(0, 0, 0, 0.73);
+}
+
+
+.product-card:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.product-card img {
+
+    width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.product-card a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 0.2em;
+}
+
+/* Sidfot */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.7s ease;
+}
+
+footer a:hover {
+    color: #979797;
+}
+
+.footer-content {
+    padding: 0 1em;
+    line-height: 2;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content div {
+    padding: 1em 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
+
+.socials i {
+    margin: 0 1em;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* media query för mobil */
+@media screen and (max-width: 767px) {
+
+    /* Sidhuvud */
+    #logo-container a img {
+        width: 60%;
+    }
+
+    #nav-menu {
+        box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.44);
+        -webkit-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.44);
+    }
+
+    #nav-menu ul li a {
+        display: block;
+        padding: 0.7em 0;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /* Aktiv sida */
+    .active {
+        background-color: #000000;
+        color: #fff !important;
+        text-decoration: underline !important;
+        text-underline-offset: 0.4em !important;
+    }
+
+    /* Varukorg */
+    .cart {
+        margin: 0 auto;
+        padding: 2em 0;
+    }
+
+    /* priduktkort */
+    .product-card h3 {
+        font-size: 1.7rem;
+        margin-bottom: 2.5em;
+    }
+
+    .product-card {
+        box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.59);
+        -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.59);
+        -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.59);
+    }
+
+    .product-card a {
+        font-size: 1.6rem;
+    }
+
+    .footer-columns {
+        text-align: center;
+    }
+
+    .socials {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .socials i {
+        margin: 0;
+    }
+}
+
+/* Media query för surf */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    /* Sidhuvud */
+    #nav-menu {
+        width: 40%;
+        box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.44);
+        -webkit-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: -1px 3px 10px 0px rgba(0, 0, 0, 0.44);
+    }
+
+    .close-btn {
+        margin: 1em auto 2em;
+    }
+
+    #nav-menu ul li a {
+        display: block;
+        padding: 0.7em 0;
+        margin: 0 auto;
+        width: 80%;
+        color: #000;
+    }
+
+    /* Aktiv sida */
+    .active {
+        background-color: #000000;
+        color: #fff !important;
+        text-decoration: underline !important;
+        text-underline-offset: 0.4em !important;
+    }
+
+    .cart {
+        margin: 0 auto;
+        padding: 2em 0;
+    }
+
+    /* Göm video för mobil */
+    #video_small {
+        display: none;
+    }
+
+    /* Visa större video */
+    #video_big {
+        display: block;
+    }
+
+    /* article */
+    .article-flex {
+        display: flex;
+    }
+
+    .article-flex div:nth-child(odd) {
+        padding-right: 1em;
+        border-right: 2px solid #a7a7a7;
+        border-radius: 3px;
+    }
+
+    .article-flex div:nth-child(even) {
+        padding-left: 1em;
+    }
+
+    /* Bild och text */
+    .article-image-flex {
+        display: flex;
+        padding: 1em 0;
+        align-items: center;
+    }
+
+    .article-image-flex img {
+        width: 100%;
+        height: auto;
+    }
+
+    .article-image-flex div {
+        flex-basis: 50%;
+        padding: 0;
+    }
+
+    .article-image-flex div:nth-child(odd) {
+        padding-right: 1em;
+    }
+
+    .article-image-flex div:nth-child(even) {
+        padding-left: 1em;
+    }
+
+    .article-image-flex h2 {
+        margin: 0;
+        padding-top: 0;
+    }
+
+    /* porträtt */
+    .portrait img {
+        width: 60%;
+    }
+
+    /* produkt info */
+    .product-container {
+        display: flex;
+    }
+
+    .product-images {
+        width: 50%;
+        padding-left: 1em;
+    }
+
+    .product-image img {
+        width: 100%;
+    }
+
+    .product-text {
+        width: 50%;
+        padding: 0 2em;
+    }
+
+    .product-image {
+        padding: 0 2em;
+    }
+
+    /* produkt i listan */
+    .product-card {
+
+        padding: 0.5em;
+        margin: 1em 2%;
+        flex-basis: 29%;
+    }
+
+    /* Sidfot */
+    .footer-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-columns div {
+        flex-basis: 50%;
+    }
+
+    .socials {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+/* Media query för datorskärm */
+@media screen and (min-width: 1200px) {
+
+    /* Sidhuvud */
+    .header-content {
+        width: 80vw;
+    }
+
+    #logo-container a img {
+        margin: 0;
+    }
+
+    /* navigering */
+    #nav-menu {
+        display: flex !important;
+        position: static;
+        height: auto;
+        width: auto;
+    }
+
+    #nav-menu ul li {
+        display: inline;
+        padding: 0;
+    }
+
+
+
+    #nav-menu ul li a {
+        text-decoration: none;
+        padding: 0 0 0 1em;
+        color: black;
+        font-weight: 700;
+    }
+
+    #nav-menu ul {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Aktiv sida */
+    .active {
+        text-decoration: underline !important;
+        text-underline-offset: 0.4em !important;
+    }
+
+    .open-btn,
+    .close-btn {
+        display: none !important;
+    }
+
+    .cart {
+        padding: 0 1.7em;
+    }
+
+    .main-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Göm video för mobil */
+    #video_small {
+        display: none;
+    }
+
+    /* Visa större video */
+    #video_big {
+        display: block;
+    }
+
+
+    /* article */
+    .article-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .article-flex p {
+        max-width: 50ch;
+    }
+
+    .article-flex div:nth-child(odd) {
+        padding-right: 1em;
+        border-right: 2px solid #a7a7a7;
+        border-radius: 3px;
+    }
+
+    .article-flex div:nth-child(even) {
+        padding-left: 1em;
+    }
+
+    /* Bild och text */
+    .article-image-flex {
+        display: flex;
+        padding: 2em 0;
+        align-items: center;
+    }
+
+    .article-image-flex img {
+        width: 100%;
+        height: auto;
+    }
+
+    .article-image-flex div {
+        flex-basis: 50%;
+        padding: 0;
+    }
+
+    .article-image-flex div:nth-child(odd) {
+        padding-right: 1em;
+    }
+
+    .article-image-flex div:nth-child(even) {
+        padding-left: 1em;
+    }
+
+    .article-image-flex h2 {
+        margin: 0;
+    }
+
+    /* porträtt */
+    .portrait img {
+        width: 50%;
+    }
+
+    /* produkt info */
+    .product-container {
+        display: flex;
+    }
+
+    .product-images {
+        width: 50%;
+    }
+
+    .product-text {
+        width: 50%;
+        padding: 0 2em;
+    }
+
+    .product-image {
+        padding: 0 2em;
+    }
+
+    /* produkt i listan */
+    .product-listing {
+        flex-wrap: wrap;
+    }
+
+    .product-card {
+        padding: 1.5em;
+        margin: 1em 2%;
+        flex-basis: 29%;
+    }
+
+    .product-card:hover {
+        transform: translateY(-10px);
+    }
+
+    /* Sidfot */
+    .footer-content {
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .footer-columns {
+        display: flex;
+        text-align: left;
+    }
+
+    .footer-columns div {
+        width: 50%;
+    }
+
+    .socials {
+        width: 40%;
+        margin: 0 auto;
+    }
+}

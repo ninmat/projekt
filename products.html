@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Våra produkter | Serenity Webbshop</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="touch-icon" href="favicon.png">
+    <!-- Stilmall -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Typsnitt-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!--Font Awesome -->
+    <script src="https://kit.fontawesome.com/7a523b8b57.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigering i sidhuvud-->
+    <header>
+        <div class="header-content">
+            <div id="logo-container">
+                <a href="index.html"><img src="images/logotyp.svg" alt="Logotyp"></a>
+            </div>
+            <!-- Menyknapp -->
+            <button class="open-btn" id="open-menu">
+                <span class="menu-icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span id="menu-text">Meny</span>
+            </button>
+            <nav id="nav-menu">
+                <!-- Stäng menyn-->
+                <button class="close-btn" id="close-menu">
+                    <span class="menu-icon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span id="menu-text2">Stäng</span>
+                </button>
+                <!-- Nav-länkar -->
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="products.html" class="active">Våra produkter</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                </ul>
+                <!--Varukorg-->
+                <button class="cart">
+                    <span class="cart-icon">
+                        <img src="images/cart.svg" alt="varukorg">
+                    </span>
+                    <span id="cart-text">Varukorg</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <!-- Produktlistning -->
+    <main>
+        <div class="main-wrapper">
+            <h1>Våra produkter</h1>
+            <!--Vaser -->
+            <h2 id="vases">Vaser</h2>
+            <div class="product-listing">
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/vas-lila_stor.avif" type="image/avif" />
+                        <img src="images/vas-lila_medium.jpg" alt="Lila vas" />
+                    </picture>
+                    <h3>Legend vas lila</h3>
+                    <a href="vas-lila.html" class="btn-link">Gå till produkt</a>
+                </div>
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/vas-gul_stor.avif" type="image/avif" />
+                        <img src="images/vas-gul_medium.jpg" alt="Gul vas" />
+                    </picture>
+                    <h3>Legend vas gul</h3>
+                    <a href="vas-gul.html" class="btn-link">Gå till produkt</a>
+                </div>
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/vas-bla_stor.avif" type="image/avif" />
+                        <img src="images/vas-bla_medium.jpg" alt="Blå vas" />
+                    </picture>
+                    <h3>Legend vas blå</h3>
+                    <a href="vas-bla.html" class="btn-link">Gå till produkt</a>
+                </div>
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/tulpan-vas-rod_stor.avif" type="image/avif" />
+                        <img src="images/tulpan-vas-rod_medium.jpg" alt="Tulpan vas med röd blomma" />
+                    </picture>
+                    <h3>Tulpanvas med röd blomma</h3>
+                    <a href="tulpan-vas-rod.html" class="btn-link">Gå till produkt</a>
+                </div>
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/tulpan-vas-lila_stor.avif" type="image/avif" />
+                        <img src="images/tulpan-vas-lila_medium.jpg" alt="Tulpan vas med lila blomma" />
+                    </picture>
+                    <h3>Tulpanvas med lila blomma</h3>
+                    <a href="tulpan-vas-lila.html" class="btn-link">Gå till produkt</a>
+                </div>
+            </div>
+            <!--Dekoration -->
+            <h2 id="decoration">Dekoration</h2>
+            <div class="product-listing">
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/svamp-gul_stor.avif" type="image/avif" />
+                        <img src="images/svamp-gul_medium.jpg" alt="Gul svamp i glas" />
+                    </picture>
+                    <h3>Skogsmulle svamp gul</h3>
+                    <a href="svamp-gul.html" class="btn-link">Gå till produkt</a>
+                </div>
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/svamp-bla_stor.avif" type="image/avif" />
+                        <img src="images/svamp-bla_medium.jpg" alt="skogsmulle svamp gul" />
+                    </picture>
+                    <h3>Skogsmulle svamp blå</h3>
+                    <a href="svamp-bla.html" class="btn-link">Gå till produkt</a>
+                </div>
+            </div>
+            <!--Servering -->
+            <h2 id="service">Servering</h2>
+            <div class="product-listing">
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/mugg-rosa_stor.avif" type="image/avif" />
+                        <img src="images/mugg-rosa_medium.jpg" alt="lugn & ro mugg rosa" />
+                    </picture>
+                    <h3>Lugn & ro mugg rosa</h3>
+                    <a href="mugg-rosa.html" class="btn-link">Gå till produkt</a>
+                </div>
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/mugg-turkos_stor.avif" type="image/avif" />
+                        <img src="images/mugg-turkos_medium.jpg" alt="lugn & ro mugg turkos" />
+                    </picture>
+                    <h3>Lugn & ro mugg turkos</h3>
+                    <a href="mugg-turkos.html" class="btn-link">Gå till produkt</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Sidfot-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-columns">
+                <!--Kundtjänst-->
+                <div>
+                    <h3>Kundtjänst</h3>
+                    <ul>
+                        <li>Telefon: <a href="tel:018522456">018-522456</a></li>
+                        <li>Telefontider: vardagar kl. 9-16</li>
+                        <li><a href="mailto:serenity@gmail.com">Mejla oss</a></li>
+                    </ul>
+                </div>
+                <!--Länkar på sidan-->
+                <div>
+                    <h3>Hitta på sidan</h3>
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="products.html" class="active">Våra produkter</a></li>
+                        <li><a href="about.html">Om oss</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Sociala medier-->
+            <div>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; Copyright Serenity AB 2023</p>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

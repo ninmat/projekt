@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulpanvas med röd blomma | Serenity Webbshop</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="touch-icon" href="favicon.png">
+    <!-- Stilmall -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lightbox 2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+        integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bilder till Lightbox 2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/close.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/loading.gif" type="image/gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/next.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/prev.png" type="image/x-png">
+    <!--Typsnitt-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&family=Poppins:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!--Font Awesome -->
+    <script src="https://kit.fontawesome.com/7a523b8b57.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigering i sidhuvud-->
+    <header>
+        <div class="header-content">
+            <div id="logo-container">
+                <a href="index.html"><img src="images/logotyp.svg" alt="Logotyp"></a>
+            </div>
+            <!-- Menyknapp -->
+            <button class="open-btn" id="open-menu">
+                <span class="menu-icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span id="menu-text">Meny</span>
+            </button>
+            <nav id="nav-menu">
+                <!-- Stäng menyn-->
+                <button class="close-btn" id="close-menu">
+                    <span class="menu-icon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span id="menu-text2">Stäng</span>
+                </button>
+                <!-- Nav-länkar -->
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="products.html" class="active">Våra produkter</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                </ul>
+                <!--Varukorg-->
+                <button class="cart">
+                    <span class="cart-icon">
+                        <img src="images/cart.svg" alt="varukorg">
+                    </span>
+                    <span id="cart-text">Varukorg</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <!-- Innehåll -->
+    <main>
+        <div class="main-wrapper">
+            <!--Breadcumbs-->
+            <nav id="breadcrumbs">
+                <ul>
+                    <li><a href="products.html">Våra produkter</a> / </li>
+                    <li><a href="products.html#vases">Vaser</a> / </li>
+                    <li>Tulpanvas med röd blomma</li>
+                </ul>
+            </nav>
+            <!--Produktnamn-->
+            <h1>Tulpanvas med röd blomma</h1>
+            <div class="product-container">
+                <div class="product-images">
+                    <!--Huvudbild -->
+                    <div class="product-image">
+                        <a href="images/tulpan-vas-rod_stor.jpg" data-lightbox="tulpan-vas-rod"
+                            data-title="Tulpanvas med röd blomma">
+                            <picture>
+                                <source srcset="images/tulpan-vas-rod_stor.avif" type="image/avif" />
+                                <img src="images/tulpan-vas-rod_stor.jpg" alt="tulpanvas med röd blomma" />
+                            </picture>
+                        </a>
+                    </div>
+                    <!--Thumbnails-->
+                    <div class="thumbnail">
+                        <div>
+                            <a href="images/tulpan-vas-rod2_stor.jpg" data-lightbox="tulpan-vas-rod"
+                                data-title="Tulpanvas med röd blomma">
+                                <img src="images/tulpan-vas-rod2_liten.jpg" alt="tulpanvas med röd blomma" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Info om produkten-->
+                <div class="product-text">
+                    <article>
+                        <h2>Beskrivning</h2>
+                        <p>Denna underbara vas passar lika bra med blommor i men är också vacker för sig själv som en
+                            elegant utsmyckning för ditt hem.</p>
+                        <p>Kajsa Ekdahl är formgivaren som ständigt inspireras av naturen, och våren 2015 designade hon
+                            denna charmiga vas.</p>
+                    </article>
+                    <article>
+                        <h3>Specifikation</h3>
+                        <div class="soft-text">
+                            <p>Artikelnummer: 395716</p>
+                            <p>Höjd: 25 cm</p>
+                            <p>Volym (l): 1.8 L</p>
+                        </div>
+                        <p class="product-price">379 kr</p>
+                    </article>
+                    <!-- Lägg till i varukorgen-->
+                    <div class="btn-container">
+                        <button class="btn-add">
+                            <span class="btn-icon">
+                                <img src="images/cart_white.svg" alt="lägg till i varukorg">
+                            </span>
+                            <span id="btn-text">Lägg till i varukorg</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Listning av liknande produkter-->
+            <h2>Liknande produkter</h2>
+            <div class="product-listing">
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/tulpan-vas-lila_stor.avif" type="image/avif" />
+                        <img src="images/tulpan-vas-lila_medium.jpg" alt="tulpanvas med lila blomma" />
+                    </picture>
+                    <h3>Tulpanvas med lila blomma</h3>
+                    <a href="tulpan-vas-lila.html" class="btn-link">Gå till produkt</a>
+                </div>
+                <div class="product-card">
+                    <picture>
+                        <source srcset="images/vas-lila_stor.avif" type="image/avif" />
+                        <img src="images/vas-lila_medium.jpg" alt="legend vas lila" />
+                    </picture>
+                    <h3>Legend vas lila</h3>
+                    <a href="vas-lila.html" class="btn-link">Gå till produkt</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Sidfot-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-columns">
+                <!--Kundtjänst-->
+                <div>
+                    <h3>Kundtjänst</h3>
+                    <ul>
+                        <li>Telefon: <a href="tel:018522456">018-522456</a></li>
+                        <li>Telefontider: vardagar kl. 9-16</li>
+                        <li><a href="mailto:serenity@gmail.com">Mejla oss</a></li>
+                    </ul>
+                </div>
+                <!--Länkar på sidan-->
+                <div>
+                    <h3>Hitta på sidan</h3>
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="products.html" class="active">Våra produkter</a></li>
+                        <li><a href="about.html">Om oss</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Sociala medier-->
+            <div>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; Copyright Serenity AB 2023</p>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Lightbox 2 JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+        integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
